@@ -1,0 +1,32 @@
+.text-box{
+    position: absolute;
+    top: 45%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+    width: 35%;
+}
+.heading{
+    &-primary{
+        display: block;
+        font-family: 'Poppins',sans-serif;
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 7.3rem;
+        letter-spacing: 0.01em;
+        color: #BFBFBF;
+        margin-bottom: 10%;
+    
+    }
+    &-footer{
+        margin-left: 0.2rem;
+        width: 90%;
+        font-family: 'Poppins',sans-serif;
+        display: block;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        font-weight: lighter;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,130 @@
+.work{
+    margin-top:3rem;
+    height: 110vh;
+    font-family: 'Poppins',sans-serif;
+    background: #fff; 
+    mix-blend-mode: screen;
+    &,*{
+        cursor: none;
+    }
+    overflow: hidden;
+}
+.title-work{
+    margin-left:5rem;
+}
+.title-work p{
+    margin-top: 4rem; 
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: #4e4e4e;
+} 
+
+.headings{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 4%;
+    color: #1b6efc; 
+    .web-title{ 
+            position: absolute;
+            left: 10%;
+            line-height: 0%;
+    
+        a{
+            font-weight: 600;
+            font-size: 12rem;
+        }
+        span{ 
+            position: absolute;
+            font-weight: 500;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+            color: #8D8D8D;
+            left: 105%;
+        }
+    }
+    .data-title{
+        position: absolute;
+        margin-top: 4%;
+        left: 58%;
+        line-height: 150%;
+        
+        a{
+            font-weight: 600;
+            font-size: 12rem;
+        }
+        span{
+            position: absolute;
+            font-weight: 500;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+            color: #8D8D8D;
+            top:90%;
+            left: 103%;
+        }
+    }
+    .mobile-title{
+            position: absolute;
+            margin-top: 16%;
+            left: 10%;
+            line-height: 0%;
+    
+        a{
+            font-weight: 600;
+            font-size: 12rem;
+        }
+        span{
+            position: absolute;
+            font-weight: 500;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+            color: #8D8D8D;
+            left: 105%;
+        }
+    }
+}
+
+//animations
+
+.shapes {
+    background: #2128bd;
+    overflow: hidden;
+  }
+  
+  .shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+    
+    $shapes: (#005ffe: 650px, #ffe5e3: 440px, #ffcc57: 270px);
+    
+    @each $color, $size in $shapes {
+      &.shape-#{index($shapes, ($color $size))} {
+        background: $color;
+        width: $size;
+        height: $size;
+        margin: (-$size/2) 0 0 (-$size/2);
+      }
+    }
+  }
+  .cursor {
+    position: absolute; 
+    background: #999eff;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 100;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #2128bd;
+  }
+  ::-moz-selection {
+    color: #fff;
+    background: #2128bd;
+  }
+  

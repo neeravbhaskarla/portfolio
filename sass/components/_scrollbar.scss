@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #808080; 
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+body{
+    -ms-overflow-style: none;  /* IE and Edge support*/
+    scrollbar-width: none;  /* Firefox support*/
+}
