@@ -74,9 +74,9 @@ body {
 
 body {
   -ms-overflow-style: none;
-  /* IE and Edge */
+  /* IE and Edge support*/
   scrollbar-width: none;
-  /* Firefox */ }
+  /* Firefox support*/ }
 
 ::after {
   content: "";
@@ -132,14 +132,14 @@ body {
 .title-work p {
   margin-top: 4rem;
   font-weight: 600;
-  font-size: 3.2rem;
-  color: #4e4e4e; }
+  font-size: 3rem;
+  color: #005ffe; }
 
 .headings {
   position: relative;
   margin-top: 15%;
   margin-left: 4%;
-  color: #1b6efc; }
+  color: #202020; }
   .headings .web-title {
     position: absolute;
     left: 10%;
@@ -196,31 +196,31 @@ body {
   border-radius: 50%; }
   .shape.shape-1 {
     background: #005ffe;
-    width: 650px;
-    height: 650px;
-    margin: -325px 0 0 -325px; }
+    width: 65rem;
+    height: 65rem;
+    margin: -32.5rem 0 0 -32.5rem; }
   .shape.shape-2 {
     background: #ffe5e3;
-    width: 440px;
-    height: 440px;
-    margin: -220px 0 0 -220px; }
+    width: 44rem;
+    height: 44rem;
+    margin: -22rem 0 0 -22rem; }
   .shape.shape-3 {
     background: #ffcc57;
-    width: 270px;
-    height: 270px;
-    margin: -135px 0 0 -135px; }
+    width: 27rem;
+    height: 27rem;
+    margin: -13.5rem 0 0 -13.5rem; }
 
 .cursor {
   position: absolute;
   background: #999eff;
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: -10px 0 0 -10px;
   border-radius: 50%;
   will-change: transform;
   user-select: none;
   pointer-events: none;
-  z-index: 100; }
+  z-index: 10000; }
 
 ::selection {
   color: #fff;
