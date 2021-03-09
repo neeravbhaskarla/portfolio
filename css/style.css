@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 62.5%; }
+  font-size: 55%;
+  scroll-behavior: smooth; }
 
 *,
 *::after,
@@ -118,7 +119,7 @@ body {
 
 .work {
   margin-top: 3rem;
-  height: 130vh;
+  height: 120vh;
   font-family: 'Poppins',sans-serif;
   background: #fff;
   mix-blend-mode: screen;
@@ -130,7 +131,7 @@ body {
   margin-left: 5rem; }
 
 .title-work p {
-  margin-top: 15rem;
+  margin-top: 10rem;
   font-weight: 600;
   font-size: 3rem;
   color: #005ffe; }
@@ -205,7 +206,7 @@ body {
     height: 44rem;
     margin: -22rem 0 0 -22rem; }
   .shape.shape-3 {
-    background: #ffcc57;
+    background: #ffdb88;
     width: 27rem;
     height: 27rem;
     margin: -13.5rem 0 0 -13.5rem; }
@@ -213,8 +214,8 @@ body {
 .cursor {
   position: absolute;
   background: #999eff;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   margin: -10px 0 0 -10px;
   border-radius: 50%;
   will-change: transform;
