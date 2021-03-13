@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 55%;
+  font-size: 52.5%;
   scroll-behavior: smooth; }
 
 *,
@@ -17,7 +17,7 @@ body {
 .text-box {
   position: absolute;
   top: 45%;
-  left: 78%;
+  left: 80%;
   transform: translate(-50%, -50%);
   /* background-color: red; */
   width: 35%; }
@@ -25,23 +25,19 @@ body {
 .heading-primary {
   display: block;
   font-family: 'Poppins',sans-serif;
-  font-size: 6rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 400;
   line-height: 7.3rem;
   letter-spacing: 0.01em;
-  color: #BFBFBF;
-  margin-bottom: 10%; }
+  color: #c2c2c2; }
 
 .heading-footer {
-  margin-left: 0.2rem;
-  width: 90%;
   font-family: 'Poppins',sans-serif;
   display: block;
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: lighter;
-  letter-spacing: -0.02em;
-  color: #ffffff; }
+  font-size: 7rem;
+  line-height: 8rem;
+  font-weight: 500;
+  color: #505050; }
 
 .arrow {
   display: block;
@@ -127,18 +123,9 @@ body {
   .work, .work * {
     cursor: none; }
 
-.title-work {
-  margin-left: 5rem; }
-
-.title-work p {
-  margin-top: 10rem;
-  font-weight: 600;
-  font-size: 3rem;
-  color: #005ffe; }
-
 .headings {
+  top: 40%;
   position: relative;
-  margin-top: 15%;
   margin-left: 4%;
   color: #202020; }
   .headings .web-title {
@@ -239,7 +226,7 @@ body {
   margin-top: -5%; }
 
 .about {
-  margin-top: 10%;
+  margin-top: 20%;
   height: 100vh;
   font-family: 'Poppins'; }
 

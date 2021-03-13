@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "personal portfolio",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
@@ -12,6 +13,7 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "magic-scroll.js": "^1.0.8"
+    "magic-scroll.js": "^1.0.8",
+    "smooth-scrollbar": "^8.6.0"
   }
 }
