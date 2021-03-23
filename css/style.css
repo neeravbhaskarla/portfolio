@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
   font-size: 52.5%;
@@ -70,7 +71,7 @@ body {
 
 .work {
   margin-top: 3rem;
-  height: 120vh;
+  height: 140vh;
   font-family: 'Poppins',sans-serif;
   background: #fff;
   mix-blend-mode: screen;
@@ -78,13 +79,27 @@ body {
   .work, .work * {
     cursor: none; }
 
+.project_heading {
+  margin-top: 20rem;
+  margin-left: 7rem;
+  padding: 0rem;
+  margin-bottom: 0%;
+  color: black;
+  font-size: 5rem;
+  font-weight: 580;
+  font-family: 'Source Code Pro', monospace; }
+  .project_heading > span {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1.3rem; }
+
 .headings {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 38rem; }
+  margin-top: 25rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
@@ -171,8 +186,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "about_title about_matter";
-  margin-top: 20%;
-  height: 80vh;
+  margin-top: 15%;
+  height: 90vh;
   font-family: 'Poppins'; }
   .about_title {
     text-align: center;
@@ -204,15 +219,15 @@ a {
   .footer_heading {
     font-weight: 400;
     padding-top: 4rem;
-    font-size: 5rem;
-    margin-left: 5rem; }
+    font-size: 4rem;
+    margin-left: 8rem; }
   .footer_navigation {
-    margin-top: 8rem; }
+    margin-top: 8.5rem; }
   .footer_list {
     text-align: center;
     list-style: none;
     text-decoration: none;
-    margin-bottom: 13rem; }
+    margin-bottom: 14rem; }
   .footer_item {
     font-weight: 400;
     font-size: 1.7rem;
@@ -223,7 +238,7 @@ a {
       cursor: pointer; }
   .footer_copyright {
     font-size: 1.7rem;
-    margin-left: 4rem; }
+    margin-left: 7rem; }
 
 .email_logo > img {
   height: 1.5rem;

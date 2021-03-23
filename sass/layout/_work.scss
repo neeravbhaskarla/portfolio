@@ -1,6 +1,6 @@
 .work{
     margin-top:3rem;
-    height: 120vh;
+    height: 140vh;
     font-family: 'Poppins',sans-serif;
     background: #fff; 
     mix-blend-mode: screen;
@@ -8,6 +8,21 @@
         cursor: none;
     }
     overflow: hidden;
+}
+.project_heading{
+  margin-top: 20rem;
+  margin-left: 7rem;
+  padding:0rem;
+  margin-bottom: 0%;
+  color: black;
+  font-size: 5rem;
+  font-weight: 580;
+  font-family: 'Source Code Pro', monospace;
+  &>span{
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1.3rem; 
+  }
 }
 .headings{ 
     display: grid;
@@ -17,7 +32,7 @@
     "web data_science"
     "mobile data_science";
     color: #202020; 
-    margin-top: 38rem;
+    margin-top: 25rem; 
     .web-title{ 
             grid-area: web;
         a{
