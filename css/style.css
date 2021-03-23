@@ -191,3 +191,56 @@ body {
   line-height: 120%;
   letter-spacing: -0.025em;
   color: #B0B0B0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.footer {
+  height: 40vh;
+  background-color: white;
+  color: black;
+  font-family: 'Poppins',sans-serif; }
+  .footer_heading {
+    font-weight: 400;
+    padding-top: 4rem;
+    font-size: 5rem;
+    margin-left: 5rem; }
+  .footer_navigation {
+    margin-top: 8rem; }
+  .footer_list {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 13rem; }
+  .footer_item {
+    font-weight: 400;
+    font-size: 1.7rem;
+    display: inline-block; }
+    .footer_item:not(:last-child) {
+      margin-right: 15rem; }
+    .footer_item :hover {
+      cursor: pointer; }
+  .footer_copyright {
+    font-size: 1.7rem;
+    margin-left: 4rem; }
+
+.email_logo > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem; }
+
+.github_logo > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem; }
+
+.linkedin_logo > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem; }
+
+.stackoverflow_logo > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem; }

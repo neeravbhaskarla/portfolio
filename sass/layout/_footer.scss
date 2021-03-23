@@ -1,1 +1,68 @@
- 
+a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    height: 40vh;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    &_heading{
+        font-weight: 400;
+        padding-top: 4rem ;
+        font-size: 5rem;
+        margin-left: 5rem;
+    }
+    &_navigation{
+        margin-top: 8rem;
+    }
+    &_list{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        margin-bottom: 13rem;
+    }
+    &_item{
+        font-weight: 400;
+        font-size: 1.7rem;
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 15rem;
+        }
+        :hover{
+            cursor: pointer;
+        }
+    }
+    &_copyright{
+        font-size: 1.7rem;
+        margin-left: 4rem; 
+    }
+} 
+.email{
+    &_logo>img{
+        height: $icon-height;
+        width: $icon-width;
+        margin-right: 0.3rem;
+    }
+}
+.github{
+    &_logo>img{
+        height: $icon-height;
+        width: $icon-width;
+        margin-right: 0.3rem;
+    }
+}
+.linkedin{
+    &_logo>img{
+        height: $icon-height;
+        width: $icon-width;
+        margin-right: 0.3rem;
+    }
+}  
+.stackoverflow{
+    &_logo>img{
+        height: $icon-height;
+        width: $icon-width;
+        margin-right: 0.3rem;
+    }
+}
