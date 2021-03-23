@@ -1,21 +1,29 @@
-.title-about{
-    color:white;
-    font-weight: 500;
-    font-size: 3.2rem;
-    position: relative;
-    margin-top: -5%;
-}
 .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "about_title about_matter";
     margin-top: 20%;
-    height: 100vh;
+    height: 80vh;
     font-family: 'Poppins';
+    &_title{
+        text-align: center;
+        grid-area: about_title;
+        color:white;
+        font-weight: 500;
+        font-size: 3.2rem;
+        p{
+            margin-top: -1%;
+        }
+    }
+    &_box{
+        grid_area: about_matter;
+        width: 40vw;
+    }
 }
 .matter{
-    height: 50vh;
-    width: 40vw;
     font-size: 2.5rem;
     line-height: 120%;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025em; 
     color: #B0B0B0;
-    position: relative;
 }

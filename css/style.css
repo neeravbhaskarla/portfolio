@@ -16,11 +16,9 @@ body {
 
 .text-box {
   position: absolute;
-  top: 45%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  /* background-color: red; */
-  width: 35%; }
+  top: 30%;
+  left: 20%;
+  /* background-color: red; */ }
 
 .heading-primary {
   display: block;
@@ -33,29 +31,10 @@ body {
 
 .heading-footer {
   font-family: 'Poppins',sans-serif;
-  display: block;
   font-size: 7rem;
   line-height: 8rem;
   font-weight: 500;
   color: #525252; }
-
-.arrow {
-  display: block;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #353535;
-  border-radius: 5rem;
-  padding-bottom: 1rem; }
-  .arrow-icon {
-    background-color: #141414;
-    border-radius: 3rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    transition: transform 1s ease; }
-  .arrow-icon:hover {
-    transform: translateY(50%); }
 
 ::-webkit-scrollbar {
   width: 0.8rem; }
@@ -75,43 +54,19 @@ body {
   scrollbar-width: none;
   /* Firefox support*/ }
 
-::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.row {
-  max-width: 120rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-
-[class^="col-"] {
-  float: left; }
-  [class^="col-"]:not(:last-child) {
-    margin-right: 4rem; }
-
-.col-1-2 {
-  width: calc((100% - 4rem) / 2); }
-
-.col-1-3 {
-  width: calc((100% - 2 * 4rem) / 3); }
-
-.col-1-4 {
-  width: calc((100% - 3 * 4rem) / 4); }
-
-.col-2-3 {
-  width: calc(2*((100% - 2 * 4rem) / 3) + 4rem); }
-
-.col-2-4 {
-  width: calc(2*((100% - 3 * 4rem) / 4) + 4rem); }
-
-.col-3-4 {
-  width: calc(3*((100% - 3 * 4rem) / 4) + 2*4rem); }
-
 .header {
+  display: grid;
   height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "model text_box";
   position: relative; }
+
+.threejs_model {
+  grid-area: model; }
+
+.text-box {
+  grid-area: text_box; }
 
 .work {
   margin-top: 3rem;
@@ -124,55 +79,48 @@ body {
     cursor: none; }
 
 .headings {
-  top: 40%;
-  position: relative;
-  margin-left: 4%;
-  color: #202020; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "web data_science" "mobile data_science";
+  color: #202020;
+  margin-top: 38rem; }
   .headings .web-title {
-    position: absolute;
-    left: 10%;
-    line-height: 0%; }
+    grid-area: web; }
     .headings .web-title a {
+      margin-left: 30%;
       font-weight: 600;
       font-size: 12rem; }
     .headings .web-title span {
-      position: absolute;
       font-weight: 500;
       font-size: 1.8rem;
       letter-spacing: -0.02em;
-      color: #8D8D8D;
-      left: 105%; }
+      color: #8D8D8D; }
   .headings .data-title {
-    position: absolute;
-    margin-top: 4%;
-    left: 58%;
-    line-height: 150%; }
+    grid-area: data_science;
+    padding: 10% 0% 10%;
+    margin-left: 25%; }
     .headings .data-title a {
+      line-height: 11rem;
       font-weight: 600;
       font-size: 12rem; }
     .headings .data-title span {
-      position: absolute;
       font-weight: 500;
       font-size: 1.8rem;
       letter-spacing: -0.02em;
-      color: #8D8D8D;
-      top: 90%;
-      left: 103%; }
+      color: #8D8D8D; }
   .headings .mobile-title {
-    position: absolute;
-    margin-top: 16%;
-    left: 10%;
-    line-height: 0%; }
+    grid-area: mobile;
+    margin-top: 5rem; }
     .headings .mobile-title a {
+      margin-left: 30%;
       font-weight: 600;
       font-size: 12rem; }
     .headings .mobile-title span {
-      position: absolute;
       font-weight: 500;
       font-size: 1.8rem;
       letter-spacing: -0.02em;
-      color: #8D8D8D;
-      left: 105%; }
+      color: #8D8D8D; }
 
 .shapes {
   background: #2128bd;
@@ -218,23 +166,28 @@ body {
   color: #fff;
   background: #2128bd; }
 
-.title-about {
-  color: white;
-  font-weight: 500;
-  font-size: 3.2rem;
-  position: relative;
-  margin-top: -5%; }
-
 .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "about_title about_matter";
   margin-top: 20%;
-  height: 100vh;
+  height: 80vh;
   font-family: 'Poppins'; }
+  .about_title {
+    text-align: center;
+    grid-area: about_title;
+    color: white;
+    font-weight: 500;
+    font-size: 3.2rem; }
+    .about_title p {
+      margin-top: -1%; }
+  .about_box {
+    grid_area: about_matter;
+    width: 40vw; }
 
 .matter {
-  height: 50vh;
-  width: 40vw;
   font-size: 2.5rem;
   line-height: 120%;
   letter-spacing: -0.025em;
-  color: #B0B0B0;
-  position: relative; }
+  color: #B0B0B0; }

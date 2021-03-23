@@ -10,65 +10,57 @@
     overflow: hidden;
 }
 .headings{ 
-    top: 40%;
-    position: relative;
-    margin-left: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "web data_science"
+    "mobile data_science";
     color: #202020; 
+    margin-top: 38rem;
     .web-title{ 
-            position: absolute;
-            left: 10%;
-            line-height: 0%;
-    
+            grid-area: web;
         a{
+            margin-left: 30%;
             font-weight: 600;
             font-size: 12rem;
         }
         span{ 
-            position: absolute;
             font-weight: 500;
             font-size: 1.8rem;
             letter-spacing: -0.02em;
             color: #8D8D8D;
-            left: 105%;
         }
     }
     .data-title{
-        position: absolute;
-        margin-top: 4%;
-        left: 58%;
-        line-height: 150%;
-        
+        grid-area: data_science;
+        padding: 10% 0% 10%;
+        margin-left: 25%;
         a{
+            line-height: 11rem;
             font-weight: 600;
             font-size: 12rem;
         }
         span{
-            position: absolute;
             font-weight: 500;
             font-size: 1.8rem;
             letter-spacing: -0.02em;
-            color: #8D8D8D;
-            top:90%;
-            left: 103%;
+            color: #8D8D8D; 
         }
     }
     .mobile-title{
-            position: absolute;
-            margin-top: 16%;
-            left: 10%;
-            line-height: 0%;
-    
+            grid-area: mobile;
+            margin-top: 5rem;
         a{
+            margin-left: 30%;
             font-weight: 600;
             font-size: 12rem;
         }
         span{
-            position: absolute;
             font-weight: 500;
             font-size: 1.8rem;
             letter-spacing: -0.02em;
             color: #8D8D8D;
-            left: 105%;
         }
     }
 }
