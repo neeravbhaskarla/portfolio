@@ -4,7 +4,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "about_title about_matter";
     margin-top: 15%;
-    height: 90vh;
+    height: 100vh;
     font-family: 'Poppins';
     &_title{
         text-align: center;
@@ -26,4 +26,32 @@
     line-height: 120%;
     letter-spacing: -0.025em; 
     color: #B0B0B0;
+}
+@media only screen and (max-width: 550px){
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas: "about_title about_title" 
+                            "about_matter about_matter";
+        margin-top: 15%;
+        height: 80vh;
+        &_title{
+            // background-color: red;
+            text-align: center;
+            grid-area: about_title;
+            font-size: 2rem;
+        }
+        &_box{
+            margin-top: 4rem;
+            grid_area: about_matter;
+            // background-color: blue;
+            width: 100vw;
+        }
+    }
+    .matter{
+        text-align:start;
+        padding: 1rem;
+        font-size: 1.3rem;
+        line-height: 120%;
+    }
 }

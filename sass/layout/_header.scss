@@ -5,11 +5,73 @@
     grid-template-rows: 1fr;
     grid-template-areas: 
     "model text_box";
-    position: relative;
+    position: relative; 
+}
+.text-box{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    // transform: translate(-50%,-50%);
+    /* background-color: red; */
+    // width: 35%;
+}
+.heading{
+    &-primary{
+        display: block;
+        font-family: 'Poppins',sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 7.3rem; 
+        letter-spacing: 0.01em; 
+        color: #c9c9c9;
+    
+    }
+    &-footer{
+        font-family: 'Poppins',sans-serif;
+        font-size: 7rem;
+        line-height: 8rem;
+        white-space:pre-line;
+        // font-weight: 600;
+        font-weight: 500;
+        color: #525252;
+        // -webkit-text-stroke-width: 0.01px;
+        // -webkit-text-stroke-color: rgb(165, 165, 165); 
+    } 
 }
 .threejs_model{
     grid-area: model; // here threejs model has to be inserted
 }
 .text-box{
     grid-area: text_box;
+}
+@media only screen and (max-width: 550px){
+    .header{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "text_box";
+    }
+    .text-box{
+        top: 50%;
+        left: 10%;
+    }
+    .heading{
+        &-primary{
+            margin-left: -0.3rem;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 5rem;
+            width: min-content;
+            margin-bottom: 1.2rem;        
+        }
+        &-footer{
+            font-size: 1rem;
+            line-height: 2rem;
+            white-space: normal;
+            color: #666666;
+        } 
+    }
+    .threejs_model{
+        display: none;
+    }
 }

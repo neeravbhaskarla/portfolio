@@ -15,28 +15,6 @@ body {
   overflow-x: hidden;
   background-color: #141414; }
 
-.text-box {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  /* background-color: red; */ }
-
-.heading-primary {
-  display: block;
-  font-family: 'Poppins',sans-serif;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 7.3rem;
-  letter-spacing: 0.01em;
-  color: #c9c9c9; }
-
-.heading-footer {
-  font-family: 'Poppins',sans-serif;
-  font-size: 7rem;
-  line-height: 8rem;
-  font-weight: 500;
-  color: #525252; }
-
 ::-webkit-scrollbar {
   width: 0.8rem; }
 
@@ -63,11 +41,57 @@ body {
   grid-template-areas: "model text_box";
   position: relative; }
 
+.text-box {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  /* background-color: red; */ }
+
+.heading-primary {
+  display: block;
+  font-family: 'Poppins',sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 7.3rem;
+  letter-spacing: 0.01em;
+  color: #c9c9c9; }
+
+.heading-footer {
+  font-family: 'Poppins',sans-serif;
+  font-size: 7rem;
+  line-height: 8rem;
+  white-space: pre-line;
+  font-weight: 500;
+  color: #525252; }
+
 .threejs_model {
   grid-area: model; }
 
 .text-box {
   grid-area: text_box; }
+
+@media only screen and (max-width: 550px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text_box"; }
+  .text-box {
+    top: 50%;
+    left: 10%; }
+  .heading-primary {
+    margin-left: -0.3rem;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    width: min-content;
+    margin-bottom: 1.2rem; }
+  .heading-footer {
+    font-size: 1rem;
+    line-height: 2rem;
+    white-space: normal;
+    color: #666666; }
+  .threejs_model {
+    display: none; } }
 
 .work {
   margin-top: 3rem;
@@ -181,13 +205,82 @@ body {
   color: #fff;
   background: #2128bd; }
 
+@media only screen and (max-width: 550px) {
+  .work {
+    height: 150vh; }
+  .project_heading {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 2rem; }
+    .project_heading > span {
+      margin-left: 0.6rem;
+      font-size: 0.9rem; }
+  .headings {
+    grid-gap: 25vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "web" "mobile" "data_science";
+    color: #202020;
+    margin-top: 20rem; }
+    .headings .web-title {
+      align-self: center;
+      justify-self: center;
+      grid-area: web; }
+      .headings .web-title a {
+        font-size: 5rem;
+        margin: 0px; }
+      .headings .web-title span {
+        font-weight: 500;
+        font-size: 0.9rem; }
+    .headings .mobile-title {
+      align-self: center;
+      justify-self: center;
+      margin: 0px; }
+      .headings .mobile-title a {
+        margin: 0px;
+        font-size: 5rem; }
+      .headings .mobile-title span {
+        font-size: 0.9rem; }
+    .headings .data-title {
+      margin: 0px;
+      padding: 0px;
+      grid-area: data_science;
+      align-self: center;
+      justify-self: center; }
+      .headings .data-title a {
+        line-height: 7rem;
+        font-weight: 600;
+        font-size: 5rem; }
+      .headings .data-title span {
+        font-size: 0.9rem; }
+  .cursor {
+    display: none; }
+  .shape {
+    display: none; }
+  .shapes {
+    display: none; } }
+
+@media only screen and (max-width: 295px) {
+  .headings .web-title a {
+    font-size: 3rem; }
+  .headings .web-title span {
+    font-size: 0.5rem; }
+  .headings .mobile-title a {
+    font-size: 3rem; }
+  .headings .mobile-title span {
+    font-size: 0.5rem; }
+  .headings .data-title a {
+    font-size: 3rem; }
+  .headings .data-title span {
+    font-size: 0.5rem; } }
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "about_title about_matter";
   margin-top: 15%;
-  height: 90vh;
+  height: 100vh;
   font-family: 'Poppins'; }
   .about_title {
     text-align: center;
@@ -207,6 +300,27 @@ body {
   letter-spacing: -0.025em;
   color: #B0B0B0; }
 
+@media only screen and (max-width: 550px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: "about_title about_title"  "about_matter about_matter";
+    margin-top: 15%;
+    height: 80vh; }
+    .about_title {
+      text-align: center;
+      grid-area: about_title;
+      font-size: 2rem; }
+    .about_box {
+      margin-top: 4rem;
+      grid_area: about_matter;
+      width: 100vw; }
+  .matter {
+    text-align: start;
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 120%; } }
+
 a {
   text-decoration: none;
   color: black; }
@@ -217,7 +331,7 @@ a {
   color: black;
   font-family: 'Poppins',sans-serif; }
   .footer_heading {
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 4rem;
     font-size: 4rem;
     margin-left: 8rem; }
@@ -259,3 +373,28 @@ a {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.3rem; }
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    height: 40vh; }
+    .footer_heading {
+      font-weight: 500;
+      padding-top: 2rem;
+      font-size: 2.5rem;
+      margin-left: 2rem; }
+    .footer_navigation {
+      margin-top: 5rem; }
+    .footer_list {
+      margin-bottom: 5.5rem; }
+    .footer_item {
+      font-size: 1.5rem;
+      display: flex;
+      margin-left: 25%; }
+      .footer_item:not(:last-child) {
+        margin-right: 15rem;
+        margin-bottom: 1rem; }
+      .footer_item :hover {
+        cursor: pointer; }
+    .footer_copyright {
+      font-size: 1rem;
+      margin-left: 1.5rem; } }

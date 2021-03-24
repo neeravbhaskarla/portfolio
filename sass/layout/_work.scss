@@ -125,4 +125,106 @@
     color: #fff;
     background: #2128bd;
   }
-  
+  @media only screen and (max-width: 550px){
+    .work{
+      height: 150vh; 
+    }
+    .project_heading{
+      margin-top: 4rem;
+      margin-left: 2rem;
+      font-size: 2rem;
+      &>span{
+        margin-left: 0.6rem;
+        font-size: 0.9rem; 
+      }
+    }
+  .headings{ 
+      // text-align: center;
+      grid-gap: 25vh;  
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "web"
+      "mobile"
+      "data_science";
+      color: #202020; 
+      margin-top: 20rem; 
+      .web-title{ 
+        align-self: center;
+        justify-self: center;
+        a{
+          font-size: 5rem;
+          margin: 0px; 
+        }
+          span{ 
+              font-weight: 500;
+              font-size: 0.9rem;
+          }
+        grid-area: web;
+      }
+      .mobile-title{ 
+              align-self: center;
+              justify-self: center;
+              margin: 0px;
+              a{
+                margin: 0px;
+                font-size: 5rem;
+              }
+              span{ 
+                  font-size: 0.9rem;
+                }
+      }
+      .data-title{
+          margin: 0px;
+          padding: 0px;
+          grid-area: data_science; 
+          align-self: center;
+          justify-self: center;
+          a{
+            line-height: 7rem; 
+            font-weight: 600;
+            font-size: 5rem; 
+          } 
+        span{ 
+            font-size: 0.9rem;
+          }
+        }
+  }
+    .cursor{
+      display: none;
+    }
+    .shape{
+      display: none;
+    }
+    .shapes{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 295px){
+    .headings{
+      .web-title{
+        a{
+          font-size: 3rem;
+        }
+        span{
+          font-size: 0.5rem; 
+        }
+      }
+      .mobile-title{ 
+        a{
+          font-size: 3rem;
+        }
+        span{
+          font-size: 0.5rem; 
+        }
+      }
+      .data-title{
+        a{
+          font-size: 3rem; 
+        }
+        span{
+          font-size: 0.5rem; 
+        }
+      }
+    }
+  }

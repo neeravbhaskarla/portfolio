@@ -8,14 +8,14 @@ a{
     color: black;
     font-family: 'Poppins',sans-serif;
     &_heading{
-        font-weight: 400;
+        font-weight: 500;
         padding-top: 4rem ;
         font-size: 4rem; 
         margin-left: 8rem;
     }
     &_navigation{
         margin-top: 11.5rem;
-    }
+    } 
     &_list{
         text-align: center;
         list-style: none;
@@ -65,4 +65,37 @@ a{
         width: $icon-width;
         margin-right: 0.3rem;
     }
+}
+@media only screen and (max-width: 550px){
+    .footer{ 
+        height: 40vh;
+        &_heading{
+            font-weight: 500;
+            padding-top: 2rem ;
+            font-size: 2.5rem; 
+            margin-left: 2rem;
+        }
+        &_navigation{
+            margin-top: 5rem;
+        } 
+        &_list{
+            margin-bottom: 5.5rem; 
+        }
+        &_item{
+            font-size: 1.5rem; 
+            display: flex;
+            margin-left: 25%;
+            &:not(:last-child){
+                margin-right: 15rem;
+                margin-bottom: 1rem;
+            }
+            :hover{
+                cursor: pointer;
+            }
+        }
+        &_copyright{
+            font-size: 1rem;
+            margin-left: 1.5rem; 
+        }
+    } 
 }
