@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 52.5%;
-  scroll-behavior: smooth; }
+  font-size: 52.5%; }
 
 *,
 *::after,
@@ -14,6 +13,11 @@ html {
 body {
   overflow-x: hidden;
   background-color: #141414; }
+
+@media only screen and (max_width: 550px) {
+  html, body {
+    height: 100%;
+    overflow: hidden; } }
 
 ::-webkit-scrollbar {
   width: 0.8rem; }
