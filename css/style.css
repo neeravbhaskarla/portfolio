@@ -82,11 +82,11 @@ body {
 .project_heading {
   margin-top: 20rem;
   margin-left: 7rem;
+  letter-spacing: -0.1rem;
   padding: 0rem;
   margin-bottom: 0%;
-  color: black;
   font-size: 5rem;
-  font-weight: 580;
+  font-weight: 550;
   font-family: 'Source Code Pro', monospace; }
   .project_heading > span {
     margin-left: 0.5rem;
@@ -99,11 +99,11 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 25rem; }
+  margin-top: 23rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
-      margin-left: 30%;
+      margin-left: 26%;
       font-weight: 600;
       font-size: 12rem; }
     .headings .web-title span {
@@ -113,8 +113,8 @@ body {
       color: #8D8D8D; }
   .headings .data-title {
     grid-area: data_science;
-    padding: 10% 0% 10%;
-    margin-left: 25%; }
+    padding: 12.4% 0% 10%;
+    margin-left: 23%; }
     .headings .data-title a {
       line-height: 11rem;
       font-weight: 600;
@@ -128,7 +128,7 @@ body {
     grid-area: mobile;
     margin-top: 5rem; }
     .headings .mobile-title a {
-      margin-left: 30%;
+      margin-left: 26%;
       font-weight: 600;
       font-size: 12rem; }
     .headings .mobile-title span {
