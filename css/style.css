@@ -227,10 +227,10 @@ a {
     text-align: center;
     list-style: none;
     text-decoration: none;
-    margin-bottom: 15.5rem; }
+    margin-bottom: 15.7rem; }
   .footer_item {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline-block; }
     .footer_item:not(:last-child) {
       margin-right: 15rem; }
@@ -241,21 +241,21 @@ a {
     margin-left: 7rem; }
 
 .email_logo > img {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   margin-right: 0.3rem; }
 
 .github_logo > img {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   margin-right: 0.3rem; }
 
 .linkedin_logo > img {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   margin-right: 0.3rem; }
 
 .stackoverflow_logo > img {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   margin-right: 0.3rem; }
