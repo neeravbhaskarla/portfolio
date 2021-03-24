@@ -206,7 +206,7 @@ body {
 
 @media only screen and (max-width: 550px) {
   .work {
-    height: 150vh; }
+    height: 130vh; }
   .project_heading {
     margin-top: 4rem;
     margin-left: 2rem;
@@ -220,7 +220,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "web" "mobile" "data_science";
     color: #202020;
-    margin-top: 20rem; }
+    margin-top: 13rem; }
     .headings .web-title {
       align-self: center;
       justify-self: center;
@@ -304,8 +304,8 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr;
     grid-template-areas: "about_title about_title"  "about_matter about_matter";
-    margin-top: 15%;
-    height: 80vh; }
+    margin-top: 10%;
+    height: 60vh; }
     .about_title {
       text-align: center;
       grid-area: about_title;
@@ -384,7 +384,7 @@ a {
     .footer_navigation {
       margin-top: 5rem; }
     .footer_list {
-      margin-bottom: 5.5rem; }
+      margin-bottom: 5.9rem; }
     .footer_item {
       font-size: 1.5rem;
       display: flex;
