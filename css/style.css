@@ -212,7 +212,7 @@ a {
   color: black; }
 
 .footer {
-  height: 40vh;
+  height: 45vh;
   background-color: white;
   color: black;
   font-family: 'Poppins',sans-serif; }
@@ -222,15 +222,15 @@ a {
     font-size: 4rem;
     margin-left: 8rem; }
   .footer_navigation {
-    margin-top: 8.5rem; }
+    margin-top: 11.5rem; }
   .footer_list {
     text-align: center;
     list-style: none;
     text-decoration: none;
-    margin-bottom: 14rem; }
+    margin-bottom: 15.5rem; }
   .footer_item {
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 2rem;
     display: inline-block; }
     .footer_item:not(:last-child) {
       margin-right: 15rem; }
@@ -241,21 +241,21 @@ a {
     margin-left: 7rem; }
 
 .email_logo > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-right: 0.3rem; }
 
 .github_logo > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-right: 0.3rem; }
 
 .linkedin_logo > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-right: 0.3rem; }
 
 .stackoverflow_logo > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
   margin-right: 0.3rem; }

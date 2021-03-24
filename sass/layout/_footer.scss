@@ -2,8 +2,8 @@ a{
     text-decoration: none;
     color: black;
 }
-.footer{
-    height: 40vh;
+.footer{ 
+    height: 45vh;
     background-color: white;
     color: black;
     font-family: 'Poppins',sans-serif;
@@ -14,17 +14,17 @@ a{
         margin-left: 8rem;
     }
     &_navigation{
-        margin-top: 8.5rem;
+        margin-top: 11.5rem;
     }
     &_list{
         text-align: center;
         list-style: none;
         text-decoration: none;
-        margin-bottom: 14rem;
+        margin-bottom: 15.5rem;
     }
     &_item{
         font-weight: 400;
-        font-size: 1.7rem;
+        font-size: 2rem;
         display: inline-block;
         &:not(:last-child){
             margin-right: 15rem;
