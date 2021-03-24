@@ -1,11 +1,10 @@
 .work{
-    margin-top:3rem;
-    height: 140vh;
+    height: 120vh;
     font-family: 'Poppins',sans-serif;
     background: #fff; 
     mix-blend-mode: screen;
     &,*{
-        cursor: none;
+        cursor: none; 
     }
     overflow: hidden;
 }
