@@ -65,7 +65,8 @@ body {
   color: #525252; }
 
 .threejs_model {
-  grid-area: model; }
+  grid-area: model;
+  display: none; }
 
 .text-box {
   grid-area: text_box; }
@@ -109,7 +110,7 @@ body {
   padding: 0rem;
   margin-bottom: 0%;
   font-size: 5rem;
-  font-weight: 550;
+  font-weight: bold;
   font-family: 'Source Code Pro', monospace; }
   .project_heading > span {
     margin-left: 0.5rem;

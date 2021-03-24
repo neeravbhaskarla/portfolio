@@ -40,6 +40,7 @@
 }
 .threejs_model{
     grid-area: model; // here threejs model has to be inserted
+    display: none;
 }
 .text-box{
     grid-area: text_box;
@@ -48,7 +49,7 @@
     .header{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: 
+        grid-template-areas:  
         "text_box";
     }
     .text-box{
