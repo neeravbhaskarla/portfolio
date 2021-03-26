@@ -4,82 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
-        <script>alert("This Website is under Construction 🚨🚨") </script> 
-        <div class="header" >
-            <div class="threejs_model">
+    <div class="scroll-container">
+        <!-- <script>alert("This Website is under Construction 🚨🚨") </script>  -->
+        <div class="header" data-scroll-section>
+            <div class="threejs_model" data-scroll data-scroll-speed="1">
                 <img src="" alt="No image"> 
             </div>
             <div class="text-box">
-                <div class="heading">
-                    <span class="heading-primary">Neerav Bhaskarla</span>
-                    <span class="heading-footer">Web Designer, 
+                <div class="heading" >
+                    <span class="heading-primary" data-scroll data-scroll-speed="1">Neerav Bhaskarla</span>
+                    <span class="heading-footer" data-scroll data-scroll-speed="2">Web Designer, 
                                                 App Developer
                                                 and Data Engineer.
                     </span>
                 </div>
             </div>
         </div>
-    <div class="cursor"></div>
-    <div class="shapes"> 
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+        <div data-scroll-section>
+            <div class="cursor"></div>
+            <div class="shapes"> 
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div id="work" class="work" data-scroll-section>
+                <div class="project_heading" data-scroll data-scroll-speed="1">
+                    <!-- <a>Projects</a><span>1 - 3</span> -->
+                    <a>Can Work With</a><span>1 - 3</span>
+                </div>
+                <div class="headings" data-scroll data-scroll-speed="3">
+                        <div class="web-title">
+                            <a>Web</a><span>01</span>
+                        </div>
+                        <div class="mobile-title">
+                            <a>Mobile</a><span>02</span>  
+                        </div>
+                        <div class="data-title">  
+                            <a>Data Science</a><span>03</span>
+                        </div>
+                </div>
+        </div>
+        <div id="about" class="about" data-scroll-section>
+                <div class="about_title" data-scroll>
+                    <p>About</p>
+                </div>
+                <div class="about_box" data-scroll>
+                    <p class="matter">Hi,<br>
+                        <br>
+                        My name is Neerav<br>
+                        <br>
+                        I am Seeking a beginner role to enhance and explore my technical knowledge. I hold a B.Tech degree from Sri Vasavi Institute of Engineering & Technology college.<br>
+                        <br>
+                        I like to perform design and integration with my intuitive problem-solving skills. Proficient in Java, C#, Python, Javascript, SQL, React and Angular. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions with my Data science knowledge. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.<br>
+                        <br>
+                        In Freetime I like to design and build websites. <br>
+                        <br>
+                        </p>
+                </div>
+        </div>
+        <footer class="footer" data-scroll-section>
+            <div class="footer_heading" data-scroll data-scroll-speed="2">
+                <p>Contact</p>
+            </div>
+            <div class="footer_navigation" data-scroll>
+                <ul class="footer_list" data-scroll>
+                    <li class="footer_item email"><a href="mailto:neeravbhaskarla@gmail.com"><span class="email_logo"><img src="/assets/email.svg" alt=""></span> Email</a></li>
+                    <li class="footer_item github"><a href="https://github.com/neeravbhaskarla" target="_blank"><span class="github_logo"><img src="/assets/github.svg" alt=""></span> Github</a></li>
+                    <li class="footer_item linkedin"><a href="https://www.linkedin.com/in/neerav-bhaskarla-a481a9192/" target="_blank"><span class="linkedin_logo"><img src="/assets/linkedin.svg" alt=""></span> Linked In</a></li>
+                    <li class="footer_item stackoverflow"><a href="https://stackoverflow.com/users/11688546/kindacoder" target="_blank"><span class="stackoverflow_logo"><img src="/assets/stackoverflow.svg" alt=""></span> StackOverflow</a></li>
+                </ul>
+            </div>
+            <strong class="footer_copyright" data-scroll>&copy; 2021 Neerav Bhaskarla - All Rights Reserved</strong>
+        </footer>
     </div>
-    <div id="work" class="work">
-        <div class="project_heading">
-            <!-- <a>Projects</a><span>1 - 3</span> -->
-            <a>Can Work With</a><span>1 - 3</span>
-        </div>
-        <div class="headings">
-            <div class="web-title">
-                <a>Web</a><span>01</span>
-            </div>
-            <div class="mobile-title">
-                <a>Mobile</a><span>02</span>  
-            </div>
-            <div class="data-title">  
-                <a>Data Science</a><span>03</span>
-            </div>
-        </div>
-    </div>
-    <div id="about" class="about">
-            <div class="about_title">
-                 <p>About</p>
-            </div>
-            <div class="about_box">
-                <p class="matter">Hi,<br>
-                    <br>
-                    My name is Neerav<br>
-                    <br>
-                    I am Seeking a beginner role to enhance and explore my technical knowledge. I hold a B.Tech degree from Sri Vasavi Institute of Engineering & Technology college.<br>
-                    <br>
-                    I like to perform design and integration with my intuitive problem-solving skills. Proficient in Java, C#, Python, Javascript, SQL, React and Angular. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions with my Data science knowledge. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.<br>
-                    <br>
-                    In Freetime I like to design and build websites. <br>
-                    <br>
-                    </p>
-            </div>
-    </div>
-    <footer class="footer">
-        <div class="footer_heading">
-            <p>Contact</p>
-        </div>
-        <div class="footer_navigation">
-            <ul class="footer_list">
-                <li class="footer_item email"><a href="mailto:neeravbhaskarla@gmail.com"><span class="email_logo"><img src="/assets/email.svg" alt=""></span> Email</a></li>
-                <li class="footer_item github"><a href="https://github.com/neeravbhaskarla" target="_blank"><span class="github_logo"><img src="/assets/github.svg" alt=""></span> Github</a></li>
-                <li class="footer_item linkedin"><a href="https://www.linkedin.com/in/neerav-bhaskarla-a481a9192/" target="_blank"><span class="linkedin_logo"><img src="/assets/linkedin.svg" alt=""></span> Linked In</a></li>
-                <li class="footer_item stackoverflow"><a href="https://stackoverflow.com/users/11688546/kindacoder" target="_blank"><span class="stackoverflow_logo"><img src="/assets/stackoverflow.svg" alt=""></span> StackOverflow</a></li>
-            </ul>
-        </div>
-        <strong class="footer_copyright">&copy; 2021 Neerav Bhaskarla - All Rights Reserved</strong>
-    </footer>
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.easeScroll.js"></script>
-    <script src="js/bundle.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js/bundle.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/scroll.js"></script>
 </body>

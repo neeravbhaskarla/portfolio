@@ -95,7 +95,7 @@ body {
     display: none; } }
 
 .work {
-  height: 130vh;
+  height: 120vh;
   font-family: 'Poppins',sans-serif;
   background: #fff;
   mix-blend-mode: screen;
@@ -104,12 +104,10 @@ body {
     cursor: none; }
 
 .project_heading {
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-left: 7rem;
   letter-spacing: -0.1rem;
-  padding: 0rem;
-  margin-bottom: 0%;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   font-family: 'Source Code Pro', monospace; }
   .project_heading > span {
@@ -123,7 +121,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 23rem; }
+  margin-top: 13rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
@@ -137,8 +135,9 @@ body {
       color: #8D8D8D; }
   .headings .data-title {
     grid-area: data_science;
-    padding: 12.4% 0% 10%;
-    margin-left: 23%; }
+    padding: 10% 0% 10%;
+    margin-left: 23%;
+    width: 20%; }
     .headings .data-title a {
       line-height: 11rem;
       font-weight: 600;
@@ -242,13 +241,15 @@ body {
       .headings .mobile-title span {
         font-size: 0.9rem; }
     .headings .data-title {
-      margin: 0px;
+      width: 0%;
+      white-space: pre;
+      margin-left: -49rem;
       padding: 0px;
       grid-area: data_science;
       align-self: center;
       justify-self: center; }
       .headings .data-title a {
-        line-height: 7rem;
+        line-height: 5rem;
         font-weight: 600;
         font-size: 5rem; }
       .headings .data-title span {
@@ -270,11 +271,13 @@ body {
   .headings .mobile-title span {
     font-size: 0.5rem; }
   .headings .data-title a {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-left: 7rem; }
   .headings .data-title span {
     font-size: 0.5rem; } }
 
 .about {
+  mix-blend-mode: screen;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -306,7 +309,7 @@ body {
     grid-template-rows: 0.1fr 1fr;
     grid-template-areas: "about_title about_title"  "about_matter about_matter";
     margin-top: 10%;
-    height: 60vh; }
+    height: 70vh; }
     .about_title {
       text-align: center;
       grid-area: about_title;

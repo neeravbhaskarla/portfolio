@@ -1,5 +1,5 @@
 .work{
-    height: 130vh;
+    height: 120vh; 
     font-family: 'Poppins',sans-serif;
     background: #fff; 
     mix-blend-mode: screen;
@@ -7,15 +7,14 @@
         cursor: none; 
     }
     overflow: hidden;
-}
+    // margin-bottom: -25%;
+} 
 .project_heading{
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-left: 7rem;
   letter-spacing: -0.1rem; 
-  padding:0rem;
-  margin-bottom: 0%;
-  font-size: 5rem;
-  // font-weight: 550;
+  font-size: 4rem;
+  // font-weight: 560;
   font-weight: bold;
   font-family: 'Source Code Pro', monospace;
   &>span{
@@ -32,7 +31,7 @@
     "web data_science"
     "mobile data_science";
     color: #202020; 
-    margin-top: 23rem; 
+    margin-top: 13rem; 
     .web-title{ 
             grid-area: web;
         a{
@@ -49,8 +48,10 @@
     }
     .data-title{
         grid-area: data_science;
-        padding: 12.4% 0% 10%;
+        // padding: 12.4% 0% 10%; 
+        padding: 10% 0% 10%;
         margin-left: 23%;
+        width: 20%;
         a{
             line-height: 11rem;
             font-weight: 600;
@@ -64,7 +65,7 @@
         }
     }
     .mobile-title{
-            grid-area: mobile;
+            grid-area: mobile; 
             margin-top: 5rem;
         a{
             margin-left: 26%;
@@ -88,7 +89,7 @@
   }
   
   .shape {
-    will-change: transform;
+    will-change: transform; 
     position: absolute;
     border-radius: 50%;
     
@@ -175,13 +176,15 @@
                 }
       }
       .data-title{
-          margin: 0px;
+          width: 0%;
+          white-space: pre;
+          margin-left: -49rem; 
           padding: 0px;
-          grid-area: data_science; 
+          grid-area: data_science;
           align-self: center;
           justify-self: center;
           a{
-            line-height: 7rem; 
+            line-height: 5rem; 
             font-weight: 600;
             font-size: 5rem; 
           } 
@@ -221,6 +224,7 @@
       .data-title{
         a{
           font-size: 3rem; 
+          margin-left: 7rem;
         }
         span{
           font-size: 0.5rem; 

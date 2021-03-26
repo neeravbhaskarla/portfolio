@@ -13,7 +13,5 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "magic-scroll.js": "^1.0.8",
-    "smooth-scrollbar": "^8.6.0"
   }
 }

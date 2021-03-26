@@ -1,4 +1,5 @@
 .about{
+    mix-blend-mode: screen;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -34,7 +35,7 @@
         grid-template-areas: "about_title about_title" 
                             "about_matter about_matter";
         margin-top: 10%;
-        height: 60vh;
+        height: 70vh;
         &_title{
             // background-color: red;
             text-align: center;
