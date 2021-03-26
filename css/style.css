@@ -121,7 +121,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 13rem; }
+  margin-top: 14rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
@@ -282,7 +282,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "about_title about_matter";
-  margin-top: 15%;
+  margin-top: 10%;
   height: 100vh;
   font-family: 'Poppins'; }
   .about_title {
