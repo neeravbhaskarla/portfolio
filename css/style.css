@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 52.5%;
+  font-size: 45.5%;
   scroll-behavior: smooth; }
 
 *,
@@ -121,7 +121,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 14rem; }
+  margin-top: 16rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
@@ -282,7 +282,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "about_title about_matter";
-  margin-top: 10%;
+  margin-top: 15%;
   height: 100vh;
   font-family: 'Poppins'; }
   .about_title {
@@ -339,12 +339,12 @@ a {
     font-size: 4rem;
     margin-left: 8rem; }
   .footer_navigation {
-    margin-top: 11.5rem; }
+    margin-top: 14.5rem; }
   .footer_list {
     text-align: center;
     list-style: none;
     text-decoration: none;
-    margin-bottom: 15.7rem; }
+    margin-bottom: 16rem; }
   .footer_item {
     font-weight: 400;
     font-size: 1.8rem;

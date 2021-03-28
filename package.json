@@ -13,5 +13,6 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
+    "three": "^0.126.1"
   }
 }
