@@ -35,7 +35,8 @@ body {
 
 .header {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background-color: transparent; }
 
 .webgl {
   position: absolute;
@@ -65,10 +66,6 @@ body {
   white-space: pre-line;
   font-weight: 500;
   color: #525252; }
-
-.threejs_model {
-  grid-area: model;
-  display: none; }
 
 .text-box {
   grid-area: text_box; }
@@ -179,26 +176,6 @@ body {
     width: 27rem;
     height: 27rem;
     margin: -13.5rem 0 0 -13.5rem; }
-
-.cursor {
-  position: absolute;
-  background: #999eff;
-  width: 2rem;
-  height: 2rem;
-  margin: -10px 0 0 -10px;
-  border-radius: 50%;
-  will-change: transform;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000; }
-
-::selection {
-  color: #fff;
-  background: #2128bd; }
-
-::-moz-selection {
-  color: #fff;
-  background: #2128bd; }
 
 @media only screen and (max-width: 550px) {
   .work {

@@ -1,6 +1,7 @@
 .header{
     height : 100vh;
     position: relative;
+    background-color:transparent;
 }
 .webgl{
     position: absolute;
@@ -39,10 +40,6 @@
         // -webkit-text-stroke-width: 0.01px;
         // -webkit-text-stroke-color: rgb(165, 165, 165); 
     } 
-}
-.threejs_model{
-    grid-area: model; // here threejs model has to be inserted
-    display: none;
 }
 .text-box{
     grid-area: text_box;

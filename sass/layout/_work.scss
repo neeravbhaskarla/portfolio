@@ -94,7 +94,7 @@
     position: absolute;
     border-radius: 50%;
     
-    // $shapes: (#005ffe: 650px, #ffe5e3: 440px, #ffcc57: 270px);
+    // $shapes: (#aeccff: 650px, #ffe5e3: 440px, #ffebbc: 270px);
     $shapes: (#005ffe: 65rem, #ffe5e3: 44rem, #ffdb88: 27rem);
      
     @each $color, $size in $shapes {
@@ -106,27 +106,15 @@
       }
     }
   }
-  .cursor {
-    position: absolute; 
-    background: #999eff;
-    width: 2rem;
-    height: 2rem;
-    margin: -10px 0 0 -10px;
-    border-radius: 50%;
-    will-change: transform;
-    user-select: none;
-    pointer-events: none;
-    z-index: 10000;
-  }
   
-  ::selection {
-    color: #fff;
-    background: #2128bd;
-  }
-  ::-moz-selection {
-    color: #fff;
-    background: #2128bd;
-  }
+  // ::selection {
+  //   color: #fff;
+  //   background: #2128bd;
+  // }
+  // ::-moz-selection {
+  //   color: #fff;
+  //   background: #2128bd;
+  // }
   @media only screen and (max-width: 550px){
     .work{
       height: 130vh; 
