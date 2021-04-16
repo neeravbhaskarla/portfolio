@@ -93,8 +93,6 @@ body {
   background: #fff;
   mix-blend-mode: screen;
   overflow: hidden; }
-  .work, .work * {
-    cursor: none; }
 
 .project_heading {
   margin-top: 15rem;
@@ -153,30 +151,6 @@ body {
       letter-spacing: -0.02em;
       color: #8D8D8D; }
 
-.shapes {
-  background: #2128bd;
-  overflow: hidden; }
-
-.shape {
-  will-change: transform;
-  position: absolute;
-  border-radius: 50%; }
-  .shape.shape-1 {
-    background: #005ffe;
-    width: 65rem;
-    height: 65rem;
-    margin: -32.5rem 0 0 -32.5rem; }
-  .shape.shape-2 {
-    background: #ffe5e3;
-    width: 44rem;
-    height: 44rem;
-    margin: -22rem 0 0 -22rem; }
-  .shape.shape-3 {
-    background: #ffdb88;
-    width: 27rem;
-    height: 27rem;
-    margin: -13.5rem 0 0 -13.5rem; }
-
 @media only screen and (max-width: 550px) {
   .work {
     height: 130vh; }
@@ -226,13 +200,7 @@ body {
         font-weight: 600;
         font-size: 5rem; }
       .headings .data-title span {
-        font-size: 0.9rem; }
-  .cursor {
-    display: none; }
-  .shape {
-    display: none; }
-  .shapes {
-    display: none; } }
+        font-size: 0.9rem; } }
 
 @media only screen and (max-width: 295px) {
   .headings .web-title a {

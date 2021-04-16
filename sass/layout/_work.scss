@@ -4,9 +4,6 @@
     font-family: 'Poppins',sans-serif;
     background: #fff; 
     mix-blend-mode: screen;
-    &,*{
-        cursor: none; 
-    }
     overflow: hidden;
     // margin-bottom: -25%;
 } 
@@ -82,39 +79,6 @@
     }
 }
 
-//animations
-
-.shapes {
-    background: #2128bd;
-    overflow: hidden;
-  }
-  
-  .shape {
-    will-change: transform; 
-    position: absolute;
-    border-radius: 50%;
-    
-    // $shapes: (#aeccff: 650px, #ffe5e3: 440px, #ffebbc: 270px);
-    $shapes: (#005ffe: 65rem, #ffe5e3: 44rem, #ffdb88: 27rem);
-     
-    @each $color, $size in $shapes {
-      &.shape-#{index($shapes, ($color $size))} {
-        background: $color;
-        width: $size;
-        height: $size;
-        margin: (-$size/2) 0 0 (-$size/2);
-      }
-    }
-  }
-  
-  // ::selection {
-  //   color: #fff;
-  //   background: #2128bd;
-  // }
-  // ::-moz-selection {
-  //   color: #fff;
-  //   background: #2128bd;
-  // }
   @media only screen and (max-width: 550px){
     .work{
       height: 130vh; 
@@ -182,15 +146,6 @@
           }
         }
   }
-    .cursor{
-      display: none;
-    }
-    .shape{
-      display: none;
-    }
-    .shapes{
-      display: none;
-    }
   }
   @media only screen and (max-width: 295px){
     .headings{
