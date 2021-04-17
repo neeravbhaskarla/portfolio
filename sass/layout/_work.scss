@@ -8,11 +8,10 @@
     // margin-bottom: -25%;
 } 
 .project_heading{
-  margin-top: 15rem;
+  margin-top: 14rem;
   margin-left: 7rem;
   letter-spacing: -0.1rem; 
   font-size: 4rem;
-  // font-weight: 560;
   font-weight: bold;
   font-family: 'Source Code Pro', monospace;
   &>span{
@@ -23,13 +22,13 @@
 }
 .headings{ 
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;  
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "web data_science"
     "mobile data_science";
     color: #202020; 
-    margin-top: 16rem; 
+    margin-top: 20rem; 
     .web-title{ 
             grid-area: web;
         a{

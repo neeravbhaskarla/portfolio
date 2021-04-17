@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 45.5%;
-  scroll-behavior: smooth; }
+  font-size: 45.5%; }
 
 *,
 *::after,
@@ -13,7 +12,16 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: black; }
+  background-color: black;
+  animation: transistion 1s; }
+
+@keyframes transistion {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
 
 ::-webkit-scrollbar {
   width: 0.8rem; }
@@ -95,7 +103,7 @@ body {
   overflow: hidden; }
 
 .project_heading {
-  margin-top: 15rem;
+  margin-top: 14rem;
   margin-left: 7rem;
   letter-spacing: -0.1rem;
   font-size: 4rem;
@@ -112,7 +120,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 16rem; }
+  margin-top: 20rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
