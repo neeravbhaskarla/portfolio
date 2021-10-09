@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
-  font-size: 45.5%;
-  scroll-behavior: smooth; }
+  font-size: 45.5%; }
 
 *,
 *::after,
@@ -13,7 +12,16 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: black; }
+  background-color: black;
+  animation: transistion 1s; }
+
+@keyframes transistion {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
 
 ::-webkit-scrollbar {
   width: 0.8rem; }
@@ -93,11 +101,9 @@ body {
   background: #fff;
   mix-blend-mode: screen;
   overflow: hidden; }
-  .work, .work * {
-    cursor: none; }
 
 .project_heading {
-  margin-top: 15rem;
+  margin-top: 14rem;
   margin-left: 7rem;
   letter-spacing: -0.1rem;
   font-size: 4rem;
@@ -114,7 +120,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "web data_science" "mobile data_science";
   color: #202020;
-  margin-top: 16rem; }
+  margin-top: 20rem; }
   .headings .web-title {
     grid-area: web; }
     .headings .web-title a {
@@ -152,30 +158,6 @@ body {
       font-size: 1.8rem;
       letter-spacing: -0.02em;
       color: #8D8D8D; }
-
-.shapes {
-  background: #2128bd;
-  overflow: hidden; }
-
-.shape {
-  will-change: transform;
-  position: absolute;
-  border-radius: 50%; }
-  .shape.shape-1 {
-    background: #005ffe;
-    width: 65rem;
-    height: 65rem;
-    margin: -32.5rem 0 0 -32.5rem; }
-  .shape.shape-2 {
-    background: #ffe5e3;
-    width: 44rem;
-    height: 44rem;
-    margin: -22rem 0 0 -22rem; }
-  .shape.shape-3 {
-    background: #ffdb88;
-    width: 27rem;
-    height: 27rem;
-    margin: -13.5rem 0 0 -13.5rem; }
 
 @media only screen and (max-width: 550px) {
   .work {
@@ -226,13 +208,7 @@ body {
         font-weight: 600;
         font-size: 5rem; }
       .headings .data-title span {
-        font-size: 0.9rem; }
-  .cursor {
-    display: none; }
-  .shape {
-    display: none; }
-  .shapes {
-    display: none; } }
+        font-size: 0.9rem; } }
 
 @media only screen and (max-width: 295px) {
   .headings .web-title a {

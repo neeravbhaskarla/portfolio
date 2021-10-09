@@ -4,7 +4,6 @@ html{
     // font-size: 62.5%;
     // font-size: 52.5%;
     font-size: 45.5%;
-    scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -16,4 +15,16 @@ body{
     overflow-x: hidden;
     // background-color: #141414;
     background-color: black;
+    animation: transistion 1s;
 } 
+
+@keyframes transistion {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
